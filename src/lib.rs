@@ -77,10 +77,19 @@ pub fn transform_load(dataset: &str) -> Result<String> {
     for result in rdr.records() {
         match result {
             Ok(record) => {
-                stmt.execute(
-                    [
-                    &record[0], &record[1], &record[2], &record[3], &record[4], &record[5],
-                    &record[6],&record[7], &record[8], &record[9], &record[10], &record[11],
+                stmt.execute([
+                    &record[0],
+                    &record[1],
+                    &record[2],
+                    &record[3],
+                    &record[4],
+                    &record[5],
+                    &record[6],
+                    &record[7],
+                    &record[8],
+                    &record[9],
+                    &record[10],
+                    &record[11],
                 ])?;
             }
             Err(err) => {
