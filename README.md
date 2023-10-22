@@ -11,7 +11,7 @@ The code does: ETL-Query: [E] Extract a dataset from URL, [T] Transform, [L] Loa
   * [Q] Accept and execute general SQL queries including in CRUD (Create, Read, Update, Delete) operations on the SQLite database to analyze and retrieve insights from the data.
 
 ### Steps
-I created the template based on the template created by Professor Noah Gift and modified the template. Based on the template from professor, I made the following changes:
+I created the template based on the template created by Professor Noah Gift and modified the template. Based on the template from professor, I made the following changes with GitHub Copilot helping me in syntax of Rust:
 1. Cargo init to add rust constructions
 2. Change the dataset from food market to goose. Goose is from FiveThirtyEight's public dataset. It is extracted into a local csv file, tranfromed the csv file with cleaning, and loaded into a .db file, and queryed with SQLlite.
 3. Convert the main.py into a command-line tool
@@ -41,12 +41,15 @@ I created the template based on the template created by Professor Noah Gift and 
 5. transform and load: `cargo run transform_load`
 6. query sample: you can use `make create`, `make read`, `make update`, or `make delete` to see sample CRUD Operations
 7. query your own: `cargo run query <insert own query here>`
-8. You can find my successful CRUD operations [here](https://github.com/nogibjj/Jeremy_Tan_IDS706_Week8_Individual/blob/main/query_log.md)
+8. You can find my successful CRUD operations [here](https://github.com/nogibjj/Fall2023_IDS706_IndividualProject2_JiayiZhou/blob/main/query_log.md)
 
 ### Check Format and Test Errors: 
 1. Format code `make format`
 2. Lint code `make lint`
 3. Test coce `make test`
+
+### Optimized Rust Binary
+1. You can find and download the uploaded artifact by going to `actions` and clicking on the latest workflow run
 
 ### Dataset
 The dataset is loaded in based on url.  Here is the url: [(https://raw.githubusercontent.com/fivethirtyeight/data/master/goose/goose_rawdata.csv)](https://raw.githubusercontent.com/fivethirtyeight/data/master/goose/goose_rawdata.csv). The file is a comma-separated value spreadsheet (CSV) called goose_rawdata.csv.  
