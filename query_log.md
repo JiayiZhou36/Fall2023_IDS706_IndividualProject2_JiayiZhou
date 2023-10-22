@@ -38,3 +38,7 @@ DELETE FROM Goose WHERE id=1;
 SELECT * FROM Goose WHERE name = 'Emma Watson';
 ```
 
+```sql
+INSERT INTO Goose (name, year, team, league, goose_eggs, broken_eggs, mehs, league_average_gpct, ppf, replacement_gpct, gwar, key_retro) VALUES ('Emma Watson', 1931, 'BSN', 'NL', 1, 0, 1, 0.67842, 99.0, 0.7342619, 0.1699602, 'watse101');
+```
+
