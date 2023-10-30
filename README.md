@@ -3,6 +3,9 @@
 ### Purpose
 This is for class data engineering individual project 2: Rust CLI Binary with SQLite. It uses Rust Script interacting with SQL Database with SQLite. It utilizes continuous integration using GitHub Actions to automatically set up environment, test, format and lint code. It also uses an AI Assistant--Copilot to assit the process.
 
+### Video
+[YouTube](https://youtu.be/jDlCHruUbJw)
+
 ### Functionality
 The code does: ETL-Query: [E] Extract a dataset from URL, [T] Transform, [L] Load into SQLite Database and [Q] Query For the ETL-Query lab:
   * [E] Extract a dataset from a URL with CSV format.
